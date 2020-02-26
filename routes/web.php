@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('uploadform');
 });
+
+Route::post('/xls/upload', 'GoodController@upload')->name('xls.upload');

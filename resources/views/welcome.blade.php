@@ -81,6 +81,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
+                    @yield('content')
+                </div>
+            </div>
+
+            <!-- <div class="content">
+                <div class="title m-b-md">
                     Laravel
                 </div>
 
@@ -94,7 +100,7 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </body>
 </html>
