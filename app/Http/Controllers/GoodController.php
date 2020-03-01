@@ -17,7 +17,7 @@ class GoodController extends Controller
     public function upload(Request $request){
 
         $request->validate([
-            'excel' => [ 'required', 'file', 'mimetypes:application/x-excel, application/excel', 'mimes:xslx',  new Maxsize()],
+            'excel' => [ 'required', 'file', 'mimetypes:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'mimes:xlsx', new Maxsize()],
         ]);
         $this->path = $request->file('excel')->store('uploads', 'public');
         $this->import();

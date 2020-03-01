@@ -6,7 +6,7 @@ use Illuminate\Contracts\Validation\Rule;
 
 class Maxsize implements Rule
 {
-    private $max_size = 100;
+    private $max_size = 102400;
     /**
      * Create a new rule instance.
      *
